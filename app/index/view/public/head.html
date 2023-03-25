@@ -1,0 +1,44 @@
+<div class="wrap">
+    <div class="header">
+      <div class="logo"><a href="/"><img src="/public/static/index/images/top.jpg" /></a></div>  
+      <div class="h_txt">
+        三农法治进行时
+      </div>
+      <div class="h_tel"><span class="tel_tit">公共法律服务热线</span><span class="tel_num">12348</span></div>
+      <div class="btn_menu"></div>
+      <div class="clear"></div>
+    </div>
+</div>
+
+<!--手机版 导航菜单遮罩层 start-->
+<div class="mask"></div>
+  <div class="nav_w">
+  <div class="close"></div>
+  <div class="nav">
+    <ul>
+      <li  {if condition='$menu_id eq 0'}class='current'{/if}>
+        <a href="/">首页</a>
+      </li>
+      <li {if condition='$menu_id eq 5'}class='current'{/if}>
+        <a href="{:url('index/index/list',array('id'=>5))}"}>法律新闻</a>
+        
+      </li>
+      <li {if condition='$menu_id eq 6'}class='current'{/if}>
+        <a href="{:url('index/index/list',array('id'=>6))}">三农·案例</a>
+        
+      </li>
+      <li {if condition='$menu_id eq 1'}class='current'{/if}>
+        <a href="{:url('index/index/lawnews')}">法律流程</a>
+        
+      </li>
+      <li {if condition='$menu_id eq 2'}class='current'{/if}>
+        <a href="{:url('index/index/easy_study')}">轻松学法</a>
+        
+      </li>
+       <li {if condition='$menu_id eq 7'}class='current'{/if}>
+        <a href="{:url('index/index/statues')}">三农·法典</a>
+      </li> 
+      </ul>
+      <div class="clear"></div>
+  </div>
+  </div> 
